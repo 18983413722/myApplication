@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".ui.Excel">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:onClick="esc"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/esc"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="添加记录"
+            android:layout_gravity="center_horizontal"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:onClick="save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/detele"
+            android:onClick="detele"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="删除"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+
+</LinearLayout>
