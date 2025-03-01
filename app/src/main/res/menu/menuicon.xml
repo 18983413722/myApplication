@@ -5,10 +5,7 @@
 
         android:title="记账"/>
 
-    <item
-        android:id="@+id/tongji"
 
-        android:title="统计"/>
 
     <item
         android:id="@+id/wode"

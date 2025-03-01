@@ -1,10 +1,6 @@
 package com.example.atry.utils;
 
-
-
-
-//这一段写入时间是在网上cv的
-
+//封装获取时间的方法
 
 import java.text.SimpleDateFormat;
 import java.util.SimpleTimeZone;

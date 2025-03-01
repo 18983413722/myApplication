@@ -34,8 +34,8 @@ public class MyDataBaseOpenHelper extends SQLiteOpenHelper {
     }
     public void insert(Notepad notepad  ){
         String sql = "insert into notepad(content,time) values(?,?)";
-        SQLiteDatabase db = getWritableDatabase();
-        db.execSQL(sql,new String[]{notepad.getContent(),notepad.getTime()});
+        SQLiteDatabase SQliteDatabase = getWritableDatabase();
+        SQliteDatabase.execSQL(sql,new String[]{notepad.getContent(),notepad.getTime()});
     }
     //展示列表
     public List<Notepad> show(){
@@ -55,5 +55,11 @@ public class MyDataBaseOpenHelper extends SQLiteOpenHelper {
             }
             cursor.close();
             return list;
+    }
+    //删除数据帮助
+    public void delete(Notepad notepad) {
+        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+        String sql = "delete from notepad where id =?";
+        sqLiteDatabase.execSQL(sql,new Object[]{notepad.getId()});
     }
 }

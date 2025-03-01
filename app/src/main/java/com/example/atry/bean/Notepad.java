@@ -1,6 +1,8 @@
 package com.example.atry.bean;
 
-public class Notepad {
+import java.io.Serializable;
+
+public class Notepad implements Serializable {
     private int id;
     private String content;
     private String time;
