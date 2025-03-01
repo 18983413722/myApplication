@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
+    android:background="@drawable/back1"
     tools:context=".ui.Excel">
 
     <androidx.appcompat.widget.Toolbar
@@ -17,7 +17,8 @@
             android:onClick="esc"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/esc"/>
+            android:src="@drawable/esc"
+            android:contentDescription="这是一张点击事件图片"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -34,6 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:hint="请输入内容"
         />
 
 
