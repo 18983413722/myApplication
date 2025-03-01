@@ -11,9 +11,10 @@
         android:layout_height="wrap_content"
         tools:text="这是内容"
         android:textStyle="bold"
+        android:textSize="20dp"
 
-
-        android:layout_margin="20dp"/>
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
 
     <TextView
         android:id="@+id/text2"
@@ -22,7 +23,7 @@
         tools:text="这是内容"
         android:textStyle="normal"
         android:textSize="16dp"
-        android:padding="10dp"
+        android:layout_margin="15dp"
         />
 
 </LinearLayout>

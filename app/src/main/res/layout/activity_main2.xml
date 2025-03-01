@@ -26,6 +26,7 @@
         app:labelVisibilityMode="labeled"
         app:itemActiveIndicatorStyle="@null"
         app:itemTextColor="@color/colorselector"
+        android:background="#F5F0F5"
         />
 
 
